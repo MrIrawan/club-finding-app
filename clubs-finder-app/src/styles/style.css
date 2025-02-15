@@ -71,6 +71,7 @@ main {
 }
 .search-form .form-group {
   flex-grow: 1;
+  position: relative;
 }
 .search-form .form-group input {
   display: block;
@@ -97,6 +98,31 @@ main {
 }
 .search-form button:active {
   background-color: #6c9aee;
+}
+
+.search-form .form-group input:focus-visible {
+  outline: none;
+}
+
+.search-form .form-group label {
+  line-height: 60px;
+  font-size: 1em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: cornflowerblue;
+  white-space: nowrap;
+  position: absolute;
+  top: 0;
+  left: 20px;
+  user-select: none;
+  pointer-events: none;
+  transition: 150ms all ease-in-out;
+}
+.search-form .form-group input:focus-visible ~ label,
+.search-form .form-group input:valid ~ label {
+  left: 10px;
+  top: -16px;
+  font-size: 0.8em;
 }
 
 .club-list-container {
