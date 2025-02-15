@@ -178,7 +178,7 @@ main {
 
   text-overflow: ellipsis;
   -webkit-box-orient: vertical;
-  line-clamp: 5; /* number of lines to show */
+  -webkit-line-clamp: 5; /* number of lines to show */
 }
 
 .club-list-container .placeholder {
